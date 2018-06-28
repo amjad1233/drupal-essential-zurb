@@ -1,0 +1,20 @@
+uuid: f704f950-7159-43c6-ad7e-cea4becce701
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Developement
+folder: ../config/env/dev
+module:
+  devel: 0
+  devel_generate: 0
+  kint: 0
+  stage_file_proxy: 0
+  shield: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.performance
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0

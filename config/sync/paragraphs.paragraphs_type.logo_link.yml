@@ -1,0 +1,9 @@
+uuid: 294c6ee4-7b7e-4407-8527-1932097d6bd1
+langcode: en
+status: true
+dependencies: {  }
+id: logo_link
+label: 'Logo link'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

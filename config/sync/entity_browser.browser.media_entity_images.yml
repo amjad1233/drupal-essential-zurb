@@ -1,0 +1,59 @@
+uuid: 32e28550-ab3f-4281-975e-70b049057642
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.media_entity_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: media_entity_images
+label: 'Media Entity Images'
+display: modal
+display_configuration:
+  width: '1000'
+  height: '650'
+  link_text: 'Select Images'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: media_icon
+  select_text: 'Insert Selected Images'
+  selection_hidden: true
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c9c20511-9e90-4edf-8803-9075c246470e:
+    settings:
+      media_type: image
+      upload_location: 'public://images/'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select Images'
+      auto_select: false
+    uuid: c9c20511-9e90-4edf-8803-9075c246470e
+    weight: 1
+    label: 'Upload new images'
+    id: dropzonejs_media_entity
+  fd136a14-f4a4-41b0-a995-8f4af6f19eb2:
+    settings:
+      view: media_entity_browser
+      view_display: entity_browser_3
+      submit_text: 'Add selected images'
+      auto_select: true
+    uuid: fd136a14-f4a4-41b0-a995-8f4af6f19eb2
+    weight: 2
+    label: 'Select Existing Images'
+    id: view

@@ -1,0 +1,48 @@
+uuid: 124d3e5f-bac4-4828-b61e-112ac6d38e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.files_entity_browser
+  module:
+    - views
+_core:
+  default_config_hash: UoGZLPH_DEy28wDjCYqiBKYsKoHlf6l6deygJjqdgPc
+name: media_entity_browser
+label: 'Media Entity Browser'
+display: iframe
+display_configuration:
+  width: '1070'
+  height: '840'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: file
+  display: label
+  display_settings: {  }
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+    settings:
+      view: files_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: true
+    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
+    weight: 1
+    label: 'Files listing'
+    id: view
+  0b2a613d-183c-47f1-a99b-49dfffd488f6:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps odt ods odp'
+    uuid: 0b2a613d-183c-47f1-a99b-49dfffd488f6
+    weight: 2
+    label: 'Upload files'
+    id: upload

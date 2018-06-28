@@ -1,0 +1,28 @@
+uuid: d2e010f4-35df-445c-b2ee-1b1c1f1f1ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_media
+    - media.type.file
+    - node.type.page
+id: node.page.field_file_media
+field_name: field_file_media
+entity_type: node
+bundle: page
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

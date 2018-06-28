@@ -1,0 +1,59 @@
+uuid: 352584cb-d344-47f7-b582-7f3f7cf6e3c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.file
+    - views.view.media_entity_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: media_file_browser
+label: 'Media - File Browser'
+display: modal
+display_configuration:
+  width: '1000'
+  height: '650'
+  link_text: 'Select files'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: media_icon
+  select_text: 'Insert Selected Files'
+  selection_hidden: true
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c9c20511-9e90-4edf-8803-9075c246470e:
+    settings:
+      media_type: file
+      upload_location: 'public://documents/'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 32M
+      extensions: 'jpg jpeg gif png txt doc xls xlsx pdf ppt pps odt ods odp docx pptx'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select Files'
+      auto_select: true
+    uuid: c9c20511-9e90-4edf-8803-9075c246470e
+    weight: 1
+    label: 'Upload new files'
+    id: dropzonejs_media_entity
+  fd136a14-f4a4-41b0-a995-8f4af6f19eb2:
+    settings:
+      view: media_entity_browser
+      view_display: entity_browser_2
+      submit_text: 'Add selected files'
+      auto_select: true
+    uuid: fd136a14-f4a4-41b0-a995-8f4af6f19eb2
+    weight: 2
+    label: 'Select Existing Files'
+    id: view

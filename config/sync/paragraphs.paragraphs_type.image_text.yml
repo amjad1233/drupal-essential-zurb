@@ -1,0 +1,9 @@
+uuid: 0abe35d1-e4a0-4753-b61f-4029fbe938f8
+langcode: en
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image Text'
+icon_uuid: null
+description: 'Special paragraph type used for home page where image and text is placed'
+behavior_plugins: {  }

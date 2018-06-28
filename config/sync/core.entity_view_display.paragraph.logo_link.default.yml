@@ -1,0 +1,31 @@
+uuid: 73d1007c-f443-4dc9-8b28-aaf203753802
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_link.field_image
+    - field.field.paragraph.logo_link.field_url_plaintext
+    - paragraphs.paragraphs_type.logo_link
+  module:
+    - linked_field
+id: paragraph.logo_link.default
+targetEntityType: paragraph
+bundle: logo_link
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_url_plaintext
+        advanced: {  }
+    region: content
+hidden:
+  field_url_plaintext: true

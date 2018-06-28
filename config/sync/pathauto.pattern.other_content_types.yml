@@ -1,0 +1,24 @@
+uuid: 715fe5f6-a17c-4dad-91d1-69f358df66ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: other_content_types
+label: 'Other Content Types'
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link]/[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  2ce796ae-1ee0-4029-bf01-e842ed476e0d:
+    id: node_type
+    bundles:
+      article: article
+      embedded_videos: embedded_videos
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2ce796ae-1ee0-4029-bf01-e842ed476e0d
+selection_logic: and
+weight: -5
+relationships: {  }

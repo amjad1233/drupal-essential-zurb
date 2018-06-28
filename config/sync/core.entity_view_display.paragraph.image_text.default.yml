@@ -1,0 +1,33 @@
+uuid: f2b72cb6-e1b3-4fe6-9586-63218440e647
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_blurb
+    - field.field.paragraph.image_text.field_media_image
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - text
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  field_blurb:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: media_icon
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

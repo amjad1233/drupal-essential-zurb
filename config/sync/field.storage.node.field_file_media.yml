@@ -1,0 +1,20 @@
+uuid: 7edf33fa-24f7-4d64-92a1-6fb141770b23
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_file_media
+field_name: field_file_media
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
