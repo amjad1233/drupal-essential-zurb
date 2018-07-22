@@ -7,8 +7,4 @@ _core:
 id: global
 label: Global
 tags:
-  abstract: 'National and State Libraries Australia (NSLA) brings together the expert knowledge and innovative capacity of Australia’s national, state and territory libraries.'
-  description: 'National and State Libraries Australia (NSLA) brings together the expert knowledge and innovative capacity of Australia’s national, state and territory libraries.'
-  title: 'National and State Libraries Australia'
-  canonical_url: '[current-page:url]'
-  keywords: 'NSLA, National & State Libraries Australia, National and State Libraries Australasia, library association, Australian libraries, research libraries'
+  title: '[current-page:url]'
