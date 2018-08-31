@@ -65,7 +65,17 @@
         "drupal/weight": "^3.1",
         "drupal/bootstrap_barrio": "^4.14",
         "drupal/zurb_foundation": "6.x-dev",
-        "drupal/foundation_layouts": "^6.0"
+        "drupal/foundation_layouts": "^6.0",
+        "drupal/draggableviews": "1.x-dev",
+        "drupal/console": "~1.0",
+        "drupal/simple_sitemap": "^2.12",
+        "drupal/sitemap": "^1.4",
+        "drupal/config_ignore": "^2.1",
+        "bower-asset/superfish": "^1.7",
+        "bower-asset/hammerjs": "^2.0",
+        "drupal/captcha": "^1.0@beta",
+        "drupal/recaptcha": "^2.3",
+        "drupal/smart_trim": "^1.1"
     },
     "replace": {
     },
