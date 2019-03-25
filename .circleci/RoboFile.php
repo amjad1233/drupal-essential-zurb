@@ -147,6 +147,7 @@ class RoboFile extends \Robo\Tasks
     protected function installDependencies()
     {
         return $this->taskComposerInstall()
+            ->workingDir("/var/www/html/web")
             ->optimizeAutoloader();
     }
 
