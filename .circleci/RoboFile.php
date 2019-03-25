@@ -147,7 +147,7 @@ class RoboFile extends \Robo\Tasks
     protected function installDependencies()
     {
         return $this->taskComposerInstall()
-            ->workingDir("/var/www/html/web")
+            ->workingDir($this->getDocroot() . '/web')
             ->optimizeAutoloader();
     }
 
@@ -246,7 +246,7 @@ class RoboFile extends \Robo\Tasks
     protected function drush()
     {
         // Drush needs an absolute path to the docroot.
-        $docroot = $this->getDocroot() . '/web';
+        $docroot = i;
         return $this->taskExec('vendor/bin/drush')
             ->option('root', $docroot, '=');
     }
