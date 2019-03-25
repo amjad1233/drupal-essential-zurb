@@ -76,7 +76,8 @@
         "drupal/captcha": "^1.0@beta",
         "drupal/recaptcha": "^2.3",
         "drupal/smart_trim": "^1.1",
-        "drush/drush": "^9.6"
+        "drush/drush": "^9.6",
+        "phpspec/phpspec": "^5.1"
     },
     "replace": {
     },
