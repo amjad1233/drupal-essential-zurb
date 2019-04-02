@@ -75,7 +75,9 @@
         "bower-asset/hammerjs": "^2.0",
         "drupal/captcha": "^1.0@beta",
         "drupal/recaptcha": "^2.3",
-        "drupal/smart_trim": "^1.1"
+        "drupal/smart_trim": "^1.1",
+        "drush/drush": "^9.6",
+        "phpspec/phpspec": "^5.1"
     },
     "replace": {
     },
@@ -133,5 +135,12 @@
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
+    },
+    "require-dev": {
+        "behat/mink-extension": "v2.2",
+        "behat/mink-selenium2-driver": "^1.3",
+        "bex/behat-screenshot": "^1.2",
+        "drupal/coder": "^8.2",
+        "drupal/drupal-extension": "master-dev"
     }
 }
