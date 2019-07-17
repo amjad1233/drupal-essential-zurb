@@ -17,4 +17,4 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml'
 $config['environment_indicator.indicator']['name'] = "Developement";
 $config['environment_indicator.indicator']['bg_color'] = "green";
 $config['environment_indicator.indicator']['fg_color'] = "white";
-$config['stage_file_proxy.settings']['origin'] = "http://nsla.epublisher.com.au";
+$config['stage_file_proxy.settings']['origin'] = "http://example.com.au";
